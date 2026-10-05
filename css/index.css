@@ -1,0 +1,200 @@
+/* colors */
+:root{
+    --primary-accent: #065f46;
+    --hover-accent: #047857;
+    --brand-accent: #022c22;
+    --primary-text: #0f172a;
+    --secondary-text: #475569;
+    --muted-text: #64748b;
+    --main-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --tag-bg: #ecfdf5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    background: var(--main-bg);
+}
+
+/* navigation */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+    width: auto;
+    padding: 1.5rem 0.8rem 1.5rem 2.5rem;
+    width: auto;
+    /* max-width: 1200px; */
+
+}
+
+nav .solara-logo a{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    width: auto;
+}
+
+nav ul li a{
+    font-size: 0.8rem;
+    color: var(--brand-accent);
+    font-weight: 500;
+}
+
+nav ul .view-btn{
+    background: var(--primary-accent);
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-left: 2rem;
+    color: var(--main-bg);
+    font-size: 0.8rem;
+}
+
+nav ul li a:hover{
+    color: var(--hover-accent);
+}
+
+main article{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/first-page-images/background/1st\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+    text-align: center;
+    width: auto;
+    height: 70vh;
+}
+
+
+main article h1{
+    color: var(--card-bg);
+    font-size: 3rem;
+    width: auto;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+main article p{
+    color: var(--tag-bg);
+    line-height: 1.2;
+    font-weight: 200;
+    padding-bottom: 5rem;
+}
+
+main article .explore-agent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main article .explore-agent .explore{
+    position: relative;
+    background: var(--primary-accent);
+    text-align: center;
+    height: 50px;
+    width: 12%;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--card-bg);
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+main article .explore-agent .talk{
+    position: relative;
+    background: var(--card-bg);
+    text-align: center;
+    height: 50px;
+    width: 12%;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--primary-accent);
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.explore-agent .talk::before{
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-accent);
+    transition: 350ms ease-in-out;
+    z-index: -1;
+}
+
+
+.explore-agent .talk:hover::before{
+    width: 100%;
+}
+
+.explore-agent .talk:hover{
+    color: var(--card-bg);
+}
+
+.explore-agent .explore::before{
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--card-bg);
+    transition: 350ms ease-in-out;
+    z-index: -1;
+}
+
+
+.explore-agent .explore:hover::before{
+    width: 100%;
+}
+
+.explore-agent .explore:hover{
+    color: var(--primary-accent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
