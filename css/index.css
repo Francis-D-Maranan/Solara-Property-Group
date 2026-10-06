@@ -92,7 +92,7 @@ nav ul .view-btn:hover{
 /* start of the hero section */
 
 main article{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/first-page-images/background/1st\ background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/first-page-images/background/1st\ background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
