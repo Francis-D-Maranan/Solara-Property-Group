@@ -133,12 +133,6 @@ main .property-card img{
     transition: all 0.4s;
 }
 
-main .property-card img:hover{
-    transform: scale(1.1);
-}
-
-
-
 /* solara ridge house */
 main .property-card .solara-ridge-house{
     display: flex;
@@ -148,6 +142,35 @@ main .property-card .solara-ridge-house{
     border-radius: 8px;
     border: 1px solid var(--border);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solara-ridge-house::before{
+    content: "HOUSE";
+    position: absolute;
+    z-index: 1;
+    height: 2%;
+    width: 3%;
+    /* top: 12px;
+    left: 12px; */
+    color: var(--primary-text);
+    background-color: var(--card-bg);
+    font-size: 0.7rem;
+    padding-left: 6.5px;
+    padding-top: 2px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.property-card .solara-ridge-house:hover{
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 
+              0 4px 8px -4px rgba(0, 0, 0, 0.06);
+}
+
+.property-card .solara-ridge-house:hover img{
+    transform: scale(1.1);
 }
 
 .property-card .solara-ridge-house .solara-details{
@@ -211,9 +234,6 @@ main .property-card .solara-ridge-house{
 }
 
 
-
-
-
 /* horizon residences */
 main .property-card .horizon-residences{
     display: flex;
@@ -223,6 +243,36 @@ main .property-card .horizon-residences{
     border-radius: 8px;
     border: 1px solid var(--border);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horizon-residences::before{
+    content: "TOWNHOUSE";
+    position: absolute;
+    z-index: 1;
+    height: 2%;
+    width: 5.5%;
+    /* top: 12px;
+    left: 12px; */
+    color: var(--primary-text);
+    background-color: var(--card-bg);
+    font-size: 0.7rem;
+    padding-left: 6.5px;
+    padding-top: 2px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.property-card .horizon-residences:hover{
+    /* transform: translateY(-4px); */
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 
+              0 4px 8px -4px rgba(0, 0, 0, 0.06);
+}
+
+.property-card .horizon-residences:hover img{
+    transform: scale(1.1);
 }
 
 .property-card .horizon-residences .horizon-details{
@@ -295,6 +345,36 @@ main .property-card .bayview-townhouse{
     border-radius: 8px;
     border: 1px solid var(--border);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bayview-townhouse::before{
+    content: "CONDO";
+    position: absolute;
+    z-index: 1;
+    height: 2%;
+    width: 4%;
+    /* top: 12px;
+    left: 12px; */
+    color: var(--primary-text);
+    background-color: var(--card-bg);
+    font-size: 0.7rem;
+    padding-left: 18px;
+    padding-top: 2px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.property-card .bayview-townhouse:hover{
+    /* transform: translateY(-4px); */
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 
+              0 4px 8px -4px rgba(0, 0, 0, 0.06);
+}
+
+.property-card .bayview-townhouse:hover img{
+    transform: scale(1.1);
 }
 
 .property-card .bayview-townhouse .bayview-details{
@@ -367,6 +447,35 @@ main .property-card .verde-lot{
     border-radius: 8px;
     border: 1px solid var(--border);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.verde-lot::before{
+    content: "LOT";
+    position: absolute;
+    z-index: 1;
+    height: 2%;
+    width: 1.8%;
+    /* top: 12px;
+    left: 12px; */
+    color: var(--primary-text);
+    background-color: var(--card-bg);
+    font-size: 0.7rem;
+    padding-left: 6.5px;
+    padding-top: 2px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.property-card .verde-lot:hover{
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 
+              0 4px 8px -4px rgba(0, 0, 0, 0.06);
+}
+
+.property-card .verde-lot:hover img{
+    transform: scale(1.1);
 }
 
 
