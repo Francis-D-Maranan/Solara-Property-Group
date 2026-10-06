@@ -1,0 +1,516 @@
+/* colors */
+:root{
+    --primary-accent: #065f46;
+    --hover-accent: #047857;
+    --brand-accent: #022c22;
+    --primary-text: #0f172a;
+    --secondary-text: #475569;
+    --muted-text: #64748b;
+    --main-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --tag-bg: #ecfdf5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    background: var(--main-bg);
+}
+
+/* navigation */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* backdrop-filter: blur(5px); */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 25rem; */
+    width: auto;
+    padding: 1.5rem 0.8rem 1.5rem 2.5rem;
+    width: auto;
+    border-bottom: 1px solid var(--border);
+    /* max-width: 1200px; */
+
+}
+
+nav .solara-logo a{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav .solara-logo{
+    margin-right: auto;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    width: auto;
+}
+
+nav ul li a{
+    font-size: 0.9rem;
+    color: var(--primary-accent);
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: var(--hover-accent);
+}
+
+nav ul .view-btn{
+    background: var(--primary-accent);
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-left: 2rem;
+    color: var(--main-bg);
+    font-size: 0.8rem;
+}
+
+nav ul .view-btn:hover{
+    background: var(--hover-accent);
+    color: var(--main-bg);
+}
+
+/* main */
+main{
+    padding: 3rem 10rem 3rem 10rem;
+    width: auto;
+    border-bottom: 1px solid var(--border);
+}
+
+main .page-title{
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+main .page-title h1{
+    font-size: 2.5rem;
+    color: var(--primary-text);
+    font-weight: 800;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+main .page-title p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-text);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+/* hero section */
+
+main .property-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+main .property-card img{
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: all 0.4s;
+}
+
+main .property-card img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* solara ridge house */
+main .property-card .solara-ridge-house{
+    display: flex;
+    gap: 2.5rem;
+    background: var(--card-bg);
+    height: 40vh;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.property-card .solara-ridge-house .solara-details{
+    padding-top: 2rem;
+}
+
+.solara-ridge-house .solara-details h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1.8;
+}
+
+.solara-ridge-house .solara-details .location{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+
+.solara-ridge-house .solara-details span{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.solara-ridge-house .solara-details .small-details ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.solara-ridge-house .solara-details .small-details ul li{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.solara-ridge-house .solara-details .main-details{
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.solara-ridge-house .solara-details a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-text);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+.solara-ridge-house .solara-details a:hover{
+    background: var(--primary-accent);
+    color: var(--main-bg);
+}
+
+
+
+
+
+/* horizon residences */
+main .property-card .horizon-residences{
+    display: flex;
+    gap: 2.5rem;
+    background: var(--card-bg);
+    height: 40vh;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.property-card .horizon-residences .horizon-details{
+    padding-top: 2rem;
+}
+
+.horizon-residences .horizon-details h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1.8;
+}
+
+.horizon-residences .horizon-details .location{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+
+.horizon-residences .horizon-details span{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.horizon-residences .horizon-details .small-details ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.horizon-residences .horizon-details .small-details ul li{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.horizon-residences .horizon-details .main-details{
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.horizon-residences .horizon-details a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-text);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+.horizon-residences .horizon-details a:hover{
+    background: var(--primary-accent);
+    color: var(--main-bg);
+}
+
+
+/* bayview towhouse */
+main .property-card .bayview-townhouse{
+    display: flex;
+    gap: 2.5rem;
+    background: var(--card-bg);
+    height: 40vh;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.property-card .bayview-townhouse .bayview-details{
+    padding-top: 2rem;
+}
+
+.bayview-townhouse .bayview-details h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1.8;
+}
+
+.bayview-townhouse .bayview-details .location{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+
+.bayview-townhouse .bayview-details span{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.bayview-townhouse .bayview-details .small-details ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.bayview-townhouse .bayview-details .small-details ul li{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.bayview-townhouse .bayview-details .main-details{
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.bayview-townhouse .bayview-details a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-text);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+.bayview-townhouse .bayview-details a:hover{
+    background: var(--primary-accent);
+    color: var(--main-bg);
+}
+
+/* verde lot 08 */
+
+main .property-card .verde-lot{
+    display: flex;
+    gap: 2.5rem;
+    background: var(--card-bg);
+    height: 40vh;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+
+.property-card .verde-lot .verde-details{
+    padding-top: 2rem;
+}
+
+.verde-lot .verde-details h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1.8;
+}
+
+.verde-lot .verde-details .location{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+
+.verde-lot .verde-details span{
+    color: var(--primary-accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.verde-lot .verde-details .small-details ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.verde-lot .verde-details .small-details ul li{
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.verde-lot .verde-details .main-details{
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.verde-lot .verde-details a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-text);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+.verde-lot .verde-details a:hover{
+    background: var(--primary-accent);
+    color: var(--main-bg);
+}
+
+
+/* start of footer */
+footer{
+    padding: 3rem 10rem 3rem 10rem;
+    width: auto;
+    height: 35vh;
+}
+
+footer .first-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.first-footer .footer-details a{
+    font-size: 1.5rem;
+    color: var(--primary-accent);
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.first-footer .footer-details p{
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.first-footer .quick-links h6{
+    font-size: 0.9rem;
+    color: var(--primary-text);
+    line-height: 2.8;
+}
+
+.first-footer .quick-links ul li a{
+    font-size: 0.8rem;
+    line-height: 2.4;
+    color: var(--muted-text);
+}
+.first-footer .quick-links ul li a:hover{
+    color: var(--hover-accent);
+}
+
+.first-footer .company h6{
+    font-size: 0.9rem;
+    color: var(--primary-text);
+    line-height: 2.8;
+}
+
+.first-footer .company ul li a{
+    font-size: 0.8rem;
+    line-height: 2.4;
+    color: var(--muted-text);
+}
+.first-footer .company ul li a:hover{
+    color: var(--hover-accent);
+}
+
+.first-footer .contact-info h6{
+    font-size: 0.9rem;
+    color: var(--primary-text);
+    line-height: 2.8;
+}
+
+.first-footer .contact-info ul li{
+    font-size: 0.8rem;
+    line-height: 3.1;
+    color: var(--primary-accent);
+}
+
+footer .second-footer{
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+footer .second-footer .credits{
+    margin-right: auto;
+}
