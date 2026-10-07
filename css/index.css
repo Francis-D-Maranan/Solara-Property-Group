@@ -238,11 +238,6 @@ main article .explore-agent .talk{
     transition: all 0.3s;
 }
 
-.featured-properties img:hover{
-    transform: scale(1.1);
-}
-
-
 .featured-cards{
     display: flex;
     justify-content: center;
@@ -260,6 +255,10 @@ main article .explore-agent .talk{
 
 .house:hover{
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.house:hover img{
+    transform: scale(1.1);
 }
 
 .featured-cards .house-details{
@@ -343,8 +342,13 @@ main article .explore-agent .talk{
     transition: ease-in-out 0.4s;
 }
 
+
 .condominium:hover{
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.condominium:hover img{
+    transform: scale(1.1);
 }
 
 .featured-cards .condominium-details{
