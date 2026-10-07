@@ -105,6 +105,9 @@ main .go-back-btn a{
     font-size: 1rem;
 }
 
+main .go-back-btn a:hover{
+    border-bottom: 1px solid var(--primary-accent);
+}
 .page-title{
     margin-bottom: 1.5rem;
 }
