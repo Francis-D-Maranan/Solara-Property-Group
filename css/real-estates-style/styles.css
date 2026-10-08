@@ -229,16 +229,16 @@ article section .property-details div span{
 .main-description .house-description :nth-child(2){
     color: var(--secondary-text);
     font-size: 0.9rem;
-    letter-spacing: 1px;
-    line-height: 1.3;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
     margin-bottom: 1rem;
 }
 
 .main-description .house-description :nth-child(3){
     color: var(--secondary-text);
     font-size: 0.9rem;
-    letter-spacing: 1px;
-    line-height: 1.3;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
     margin-bottom: 3rem;
 }
 
@@ -267,7 +267,7 @@ article section .property-details div span{
 aside{
     width: 35%;
     height: 100%;
-    padding-block: 0.7rem;
+    padding-block: 1rem;
     padding-inline: 1rem;
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -275,7 +275,7 @@ aside{
 
 aside h4{
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 aside p{
@@ -316,7 +316,7 @@ aside .agent .agent-details span{
 aside form input{
     width: 100%;
     height: 3vh;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     border: 1px solid var(--border);
     border-radius: 6px;
     background: var(--card-bg);
@@ -333,7 +333,7 @@ aside form input::placeholder{
 aside form textarea{
     width: 100%;
     height: 8vh;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     border: 1px solid var(--border);
     border-radius: 6px;
