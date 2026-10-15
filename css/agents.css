@@ -94,6 +94,7 @@ nav ul .view-btn:hover{
 main{
     padding: 3rem 10rem 3rem 10rem;
     width: auto;
+    border-bottom: 1px solid var(--border);
 }   
 
 main .main-title{

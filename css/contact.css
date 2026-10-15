@@ -89,6 +89,136 @@ nav ul .view-btn:hover{
     color: var(--main-bg);
 }
 
+/* main */
+main{
+    padding: 3rem 10rem 3rem 10rem;
+    width: auto;
+    border-bottom: 1px solid var(--border);
+}
+
+main h1{
+    text-align: center;
+    color: var(--primary-text);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.get-in-touch{
+    background: #065f46;
+    padding: 3rem;
+    color: var(--card-bg);
+    width: 50%;
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.get-in-touch h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-in-touch .info-card{
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 2.6rem;
+}
+
+.get-in-touch .info-card svg{
+    font-size: 2rem;
+}
+
+.get-in-touch .info-card .card-details p{
+    color: var(--border);
+    line-height: 1.8;
+}
+
+.message{
+    width: 50%;
+    background: var(--card-bg);
+    color: var(--primary-text);
+    padding-block: 3rem;
+    padding-inline: 6rem;   
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.message h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.message input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+
+.message label{
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+.message textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 8px;
+    height: 10vh;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+.message textarea::placeholder{
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.message select{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.message button{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-accent);
+    color: var(--card-bg);
+    font-weight: 600;
+}
+
+.message button:hover{
+    background: var(--hover-accent);
+}
+
+
+
+
+
+
+
 
 
 /* start of footer */
